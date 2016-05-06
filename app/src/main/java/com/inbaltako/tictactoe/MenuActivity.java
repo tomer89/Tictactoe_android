@@ -14,9 +14,9 @@ import android.widget.ImageButton;
 
 public class MenuActivity extends AppCompatActivity {
 
-    ActionBar actionBar;
-    ImageButton exit;
-    ImageButton newGame;
+    private ActionBar actionBar;
+    private ImageButton exit;
+    private ImageButton newGame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -7,9 +7,9 @@ public class Tictactoe {
     private final static int BOARD_SIZE = 9;
     private Random random;
 
-    public final static char HUMAN = 'X';
-    public final static char ANDROID = 'O';
-    public final static char EMPTY = ' ';
+    protected final static char HUMAN = 'X';
+    protected final static char ANDROID = 'O';
+    protected final static char EMPTY = ' ';
 
     public Tictactoe() {
         random = new Random();
@@ -34,7 +34,7 @@ public class Tictactoe {
         board[location] = player;
     }
 
-    public int getComputerMove() {
+    public int getAndroidMove() {
         int move;
 
         for (int i = 0; i < BOARD_SIZE; i++) {
@@ -71,10 +71,11 @@ public class Tictactoe {
         return move;
     }
 
-    // returns 3 when computer won
-    // 2 when human won
-    // 1 when a tie
+    // return
     // 0 when game is still running
+    // 1 when a tie
+    // 2 when human won
+    // 3 when computer won
     public int checkForWinner() {
         // check for horizontal wins
         for (int i = 0; i <= 6; i += 3) {

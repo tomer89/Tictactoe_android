@@ -11,8 +11,8 @@ import android.widget.Button;
 
 public class ReturnDialog extends DialogFragment {
 
-    Button stay;
-    Button leave;
+    private Button stay;
+    private Button leave;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {

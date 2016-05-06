@@ -8,9 +8,9 @@ import android.os.Bundle;
 
 public class ScoreActivity extends FragmentActivity {
 
-    TieFragment tieFragment;
-    HumanWonFragment humanWonFragment;
-    AndroidWonFragment androidWonFragment;
+    private TieFragment tieFragment;
+    private HumanWonFragment humanWonFragment;
+    private AndroidWonFragment androidWonFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

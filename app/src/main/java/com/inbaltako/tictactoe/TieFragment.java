@@ -11,8 +11,8 @@ import android.widget.ImageButton;
 
 public class TieFragment extends Fragment {
 
-    ImageButton newGame;
-    ImageButton exit;
+    private ImageButton newGame;
+    private ImageButton exit;
 
     public TieFragment newInstance() {
         return new TieFragment();

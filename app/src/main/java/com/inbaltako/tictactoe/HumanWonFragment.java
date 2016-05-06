@@ -10,8 +10,8 @@ import android.widget.ImageButton;
 
 public class HumanWonFragment extends Fragment {
 
-    ImageButton newGame;
-    ImageButton exit;
+    private ImageButton newGame;
+    private ImageButton exit;
 
     public HumanWonFragment newInstance() {
         return new HumanWonFragment();
