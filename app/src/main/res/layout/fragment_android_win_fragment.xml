@@ -1,13 +1,55 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.inbaltako.tictactoe.android_win_fragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/text">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/its"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you"
+            android:textColor="@color/white"
+            android:textSize="75sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lost"
+            android:textColor="@color/colorAccent"
+            android:textSize="75sp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@+id/text"
+        android:id="@+id/newGameAndroidWin"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/new_game_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/exitBtnAndroidWin"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/exit_btn"
+        android:layout_below="@+id/newGameAndroidWin"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

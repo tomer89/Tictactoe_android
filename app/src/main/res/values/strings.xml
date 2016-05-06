@@ -14,4 +14,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="it_s_a">it\'s a</string>
+    <string name="tie">tie!</string>
+    <string name="you">you</string>
+    <string name="lost">lost!</string>
+    <string name="won">won!</string>
 </resources>
