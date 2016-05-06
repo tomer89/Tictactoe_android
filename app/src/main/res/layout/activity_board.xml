@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:text="@string/opponent"
+            android:text="@string/your"
             android:textColor="@color/colorAccent"
             android:textSize="35sp"
             android:textStyle="bold" />
@@ -164,7 +164,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:text="6 moves"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/moves"
             android:textColor="@color/white"
             android:textSize="25sp" />
 

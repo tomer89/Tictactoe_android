@@ -1,5 +1,6 @@
 package com.inbaltako.tictactoe;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBar;
@@ -28,7 +29,15 @@ public class ScoreActivity extends FragmentActivity {
         androidWonFragment.setArguments(getIntent().getExtras());
         humanWonFragment.setArguments(getIntent().getExtras());
 
-        getSupportFragmentManager().beginTransaction().add(R.id.score_activity, humanWonFragment).commit();
+        Intent intent = getIntent();
+        int result = intent.getIntExtra("result", -1);
+
+        if (result == 1)
+            getSupportFragmentManager().beginTransaction().add(R.id.score_activity, tieFragment).commit();
+        else if (result == 2)
+            getSupportFragmentManager().beginTransaction().add(R.id.score_activity, humanWonFragment).commit();
+        else
+            getSupportFragmentManager().beginTransaction().add(R.id.score_activity, androidWonFragment).commit();
     }
 
 }

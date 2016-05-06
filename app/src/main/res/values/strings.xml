@@ -16,4 +16,6 @@
     <string name="tie">tie!</string>
     <string name="won">won!</string>
     <string name="lost">lost!</string>
+    <string name="your">Your</string>
+    <string name="moves">moves</string>
 </resources>

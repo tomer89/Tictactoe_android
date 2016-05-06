@@ -1,17 +1,26 @@
 package com.inbaltako.tictactoe;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+import java.util.Timer;
+import java.util.concurrent.TimeUnit;
 
 public class BoardActivity extends AppCompatActivity {
 
     private ReturnDialog returnDialog;
     private Tictactoe game;
     private ImageButton buttons[];
+    private TextView movesLeft;
+    private TextView player;
+    private int totalMoves;
+    private Intent intent;
 
     private boolean humanTurn = true;
     private boolean gameOver = false;
@@ -22,6 +31,12 @@ public class BoardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_board);
 
         returnDialog = new ReturnDialog();
+        intent = new Intent(this, ScoreActivity.class);
+        player = (TextView) findViewById(R.id.turnsText);
+        movesLeft = (TextView) findViewById(R.id.movesLeft);
+        totalMoves = 9;
+
+        movesLeft.setText(Integer.toString(totalMoves));
 
         // setting portrait mode
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -48,7 +63,7 @@ public class BoardActivity extends AppCompatActivity {
         }
     }
 
-    public void initButtons() {
+    private void initButtons() {
         buttons[0] = (ImageButton) findViewById(R.id.boardBtn1);
         buttons[1] = (ImageButton) findViewById(R.id.boardBtn2);
         buttons[2] = (ImageButton) findViewById(R.id.boardBtn3);
@@ -60,30 +75,46 @@ public class BoardActivity extends AppCompatActivity {
         buttons[8] = (ImageButton) findViewById(R.id.boardBtn9);
     }
 
-    public void startGame() {
+    private void startGame() {
         game.clearBoard();
 
         for (int i = 0; i < game.getBoardSize(); i++) {
-            buttons[i].setImageResource(R.drawable.o);
+            buttons[i].setImageResource(R.drawable.empty_button);
             buttons[i].setEnabled(true);
             buttons[i].setOnClickListener(new BoardClickLstener(i));
         }
 
         if (humanTurn) {
-            // -- TO DO -- update your turn text
+            player.setText(R.string.your);
             humanTurn = false;
         } else {
-            // -- TO DO -- update oppunets turn text
+            player.setText(R.string.opponent);
             int move = game.getAndroidMove();
-            setMove(game.ANDROID, move);
             humanTurn = true;
+            setMove(game.ANDROID, move);
         }
     }
 
-    public void setMove(char player, int location) {
+    private void setMove(char player, int location) {
         game.setMove(player, location);
         buttons[location].setEnabled(false);
-        buttons[location].setImageResource(R.drawable.x);
+        if (player == game.HUMAN) {
+            buttons[location].setImageResource(R.drawable.x);
+            if (totalMoves >= 1) {
+                totalMoves--;
+                movesLeft.setText(Integer.toString(totalMoves));
+            }
+        } else {
+            buttons[location].setImageResource(R.drawable.o);
+            if (totalMoves >= 1) {
+                totalMoves--;
+                movesLeft.setText(Integer.toString(totalMoves));
+            }
+        }
+    }
+
+    private void killCallingActivity() {
+        finish();
     }
 
     private class BoardClickLstener implements View.OnClickListener {
@@ -99,27 +130,30 @@ public class BoardActivity extends AppCompatActivity {
             if (!gameOver) {
                 if (buttons[location].isEnabled()) {
                     setMove(game.HUMAN, location);
-
                     int winner = game.checkForWinner();
                     if (winner == 0) {
-                        // -- TO DO -- update computer turn text
+                        player.setText(R.string.opponent);
                         int move = game.getAndroidMove();
                         setMove(game.ANDROID, move);
-                        // -- TO DO -- update button[location] to be O
                         winner = game.checkForWinner();
                     }
-
                     if (winner == 0) {
-                        // -- TO DO -- update human turn text
+                        player.setText(R.string.your);
                     } else if (winner == 1) {
-                        // -- TO DO -- move to tie fragment
                         gameOver = true;
+                        intent.putExtra("result", 1);
+                        startActivity(intent);
+                        killCallingActivity();
                     } else if (winner == 2) {
-                        // -- TO DO -- move to human won fragment
                         gameOver = true;
+                        intent.putExtra("result", 2);
+                        startActivity(intent);
+                        killCallingActivity();
                     } else {
-                        // -- TO DO -- move to android won fragment
                         gameOver = true;
+                        intent.putExtra("result", 3);
+                        startActivity(intent);
+                        killCallingActivity();
                     }
                 }
             }
