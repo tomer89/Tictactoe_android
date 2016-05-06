@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bf02a4caa6343a230d687063c6bc95cf50797ebb">
+        <dex dex="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f803e6061ab3d705bbcc67dbff9c59099a7321e5\classes.dex" />
+    </item>
+
+</items>

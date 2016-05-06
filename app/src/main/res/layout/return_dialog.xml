@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/DialogTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/relativeLayout"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:text="@string/leave_msg"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DialogTitle"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/dialogButtonStay"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stay"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/DialogTitle"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/dialogButtonLeave"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/leave"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:layout_alignTop="@+id/dialogButtonStay"
+            android:layout_toEndOf="@+id/dialogButtonStay"
+            android:textAlignment="center"/>
+    </TableRow>
+
+</RelativeLayout>
