@@ -36,104 +36,120 @@
             android:textSize="35sp" />
     </LinearLayout>
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout"
-        android:layout_marginTop="35dp">
+        android:layout_centerInParent="true">
 
-        <TableRow
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/border" />
 
-            <ImageButton
-                android:id="@+id/boardBtn1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:src="@drawable/x"
-                android:padding="25dp"/>
-
-            <ImageButton
-                android:id="@+id/boardBtn2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="25dp"
-                android:background="@color/colorPrimary"
-                android:src="@drawable/o" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="25dp"
-                android:id="@+id/boardBtn3"
-                android:background="@color/colorPrimary"
-                android:src="@drawable/x" />
-        </TableRow>
-
-        <TableRow
+        <RelativeLayout
+            android:id="@+id/above"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/boardBtn4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="25dp"
-                android:background="@color/colorPrimary"
-                android:src="@drawable/o" />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/boardBtn5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:padding="25dp"
-                android:src="@drawable/x" />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
 
-            <ImageButton
-                android:id="@+id/boardBtn6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:padding="25dp"
-                android:src="@drawable/o" />
-        </TableRow>
+                    <ImageButton
+                        android:id="@+id/boardBtn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="25dp"
+                        android:src="@drawable/empty_button" />
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/boardBtn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="25dp"
+                        android:src="@drawable/empty_button" />
 
-            <ImageButton
-                android:id="@+id/boardBtn7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:padding="25dp"
-                android:src="@drawable/x" />
+                    <ImageButton
+                        android:id="@+id/boardBtn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="25dp"
+                        android:src="@drawable/empty_button" />
 
-            <ImageButton
-                android:id="@+id/boardBtn8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:padding="25dp"
-                android:src="@drawable/o" />
+                </TableRow>
 
-            <ImageButton
-                android:id="@+id/boardBtn9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:padding="25dp"
-                android:src="@drawable/x" />
-        </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
 
-    </TableLayout>
+                    <ImageButton
+                        android:id="@+id/boardBtn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="25dp"
+                        android:src="@drawable/empty_button" />
+
+                    <ImageButton
+                        android:id="@+id/boardBtn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="25dp"
+                        android:src="@drawable/empty_button" />
+
+                    <ImageButton
+                        android:id="@+id/boardBtn6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="25dp"
+                        android:src="@drawable/empty_button" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/boardBtn7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="25dp"
+                        android:src="@drawable/empty_button" />
+
+                    <ImageButton
+                        android:id="@+id/boardBtn8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="25dp"
+                        android:src="@drawable/empty_button" />
+
+                    <ImageButton
+                        android:id="@+id/boardBtn9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="25dp"
+                        android:src="@drawable/empty_button" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -161,5 +177,4 @@
             android:textSize="25sp"
             android:textStyle="bold" />
     </LinearLayout>
-
 </RelativeLayout>
