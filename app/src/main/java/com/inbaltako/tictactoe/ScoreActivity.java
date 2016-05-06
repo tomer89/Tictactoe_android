@@ -28,7 +28,7 @@ public class ScoreActivity extends FragmentActivity {
         androidWonFragment.setArguments(getIntent().getExtras());
         humanWonFragment.setArguments(getIntent().getExtras());
 
-        getSupportFragmentManager().beginTransaction().add(R.id.score_activity, tieFragment).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.score_activity, humanWonFragment).commit();
     }
 
 }

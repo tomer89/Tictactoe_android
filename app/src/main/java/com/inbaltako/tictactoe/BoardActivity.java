@@ -13,7 +13,6 @@ public class BoardActivity extends AppCompatActivity {
 
     ActionBar actionBar;
     ReturnDialog returnDialog;
-    ImageButton btn0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +22,6 @@ public class BoardActivity extends AppCompatActivity {
         final Intent intent = new Intent(this, ScoreActivity.class);
 
         returnDialog = new ReturnDialog();
-        btn0 = (ImageButton) findViewById(R.id.boardBtn9);
-        btn0.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(intent);
-            }
-        });
 
         // setting portrait mode
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
