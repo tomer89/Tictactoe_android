@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:layoutDirection="ltr"
     tools:context="com.inbaltako.tictactoe.MenuActivity">
 
 
@@ -18,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:paddingTop="50dp"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -34,17 +35,17 @@
             android:onClick="btnClicked"
             android:padding="16dp" />
 
-    </LinearLayout>
+        <ImageButton
+            android:id="@+id/exitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exit_btn"
+            android:background="@color/colorPrimary"
+            android:padding="16dp"
+            android:layout_below="@+id/newGameBtn"
+            android:onClick="btnClicked"
+            android:layout_alignLeft="@+id/newGameBtn"/>
 
-    <ImageButton
-        android:id="@+id/exitBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/exit_btn"
-        android:background="@color/colorPrimary"
-        android:padding="16dp"
-        android:layout_below="@+id/relativeLayout"
-        android:layout_alignStart="@+id/relativeLayout"
-        android:onClick="btnClicked" />
+    </RelativeLayout>
 
 </RelativeLayout>

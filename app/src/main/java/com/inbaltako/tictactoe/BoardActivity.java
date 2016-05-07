@@ -2,7 +2,9 @@ package com.inbaltako.tictactoe;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,20 +12,24 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.Timer;
-import java.util.concurrent.TimeUnit;
+import java.util.TimerTask;
+
+import javax.net.ssl.SSLEngineResult;
 
 public class BoardActivity extends AppCompatActivity {
 
     private ReturnDialog returnDialog;
     private Tictactoe game;
     private ImageButton buttons[];
-    private TextView movesLeft;
-    private TextView player;
+    private TextView tvMovesLeft;
+    private TextView tvPlayer;
     private int totalMoves;
     private Intent intent;
 
     private boolean humanTurn = true;
     private boolean gameOver = false;
+    private static final int DELAY = 350;
+    private static final int SCORE_DELAY = 400;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,11 +38,11 @@ public class BoardActivity extends AppCompatActivity {
 
         returnDialog = new ReturnDialog();
         intent = new Intent(this, ScoreActivity.class);
-        player = (TextView) findViewById(R.id.turnsText);
-        movesLeft = (TextView) findViewById(R.id.movesLeft);
+        tvPlayer = (TextView) findViewById(R.id.turnsText);
+        tvMovesLeft = (TextView) findViewById(R.id.movesLeft);
         totalMoves = 9;
 
-        movesLeft.setText(Integer.toString(totalMoves));
+        tvMovesLeft.setText(Integer.toString(totalMoves));
 
         // setting portrait mode
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -85,10 +91,8 @@ public class BoardActivity extends AppCompatActivity {
         }
 
         if (humanTurn) {
-            player.setText(R.string.your);
             humanTurn = false;
         } else {
-            player.setText(R.string.opponent);
             int move = game.getAndroidMove();
             humanTurn = true;
             setMove(game.ANDROID, move);
@@ -102,14 +106,22 @@ public class BoardActivity extends AppCompatActivity {
             buttons[location].setImageResource(R.drawable.x);
             if (totalMoves >= 1) {
                 totalMoves--;
-                movesLeft.setText(Integer.toString(totalMoves));
+                tvMovesLeft.setText(Integer.toString(totalMoves));
             }
         } else {
-            buttons[location].setImageResource(R.drawable.o);
-            if (totalMoves >= 1) {
-                totalMoves--;
-                movesLeft.setText(Integer.toString(totalMoves));
-            }
+            tvPlayer.setText(R.string.opponent);
+            final int loc = location;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    buttons[loc].setImageResource(R.drawable.o);
+                    if (totalMoves >= 1) {
+                        totalMoves--;
+                        tvMovesLeft.setText(Integer.toString(totalMoves));
+                        tvPlayer.setText(R.string.your);
+                    }
+                }
+            }, DELAY);
         }
     }
 
@@ -132,28 +144,43 @@ public class BoardActivity extends AppCompatActivity {
                     setMove(game.HUMAN, location);
                     int winner = game.checkForWinner();
                     if (winner == 0) {
-                        player.setText(R.string.opponent);
                         int move = game.getAndroidMove();
                         setMove(game.ANDROID, move);
                         winner = game.checkForWinner();
                     }
+
                     if (winner == 0) {
-                        player.setText(R.string.your);
+                        return;
                     } else if (winner == 1) {
-                        gameOver = true;
-                        intent.putExtra("result", 1);
-                        startActivity(intent);
-                        killCallingActivity();
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                gameOver = true;
+                                intent.putExtra("result", 1);
+                                startActivity(intent);
+                                killCallingActivity();
+                            }
+                        }, SCORE_DELAY);
                     } else if (winner == 2) {
-                        gameOver = true;
-                        intent.putExtra("result", 2);
-                        startActivity(intent);
-                        killCallingActivity();
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                gameOver = true;
+                                intent.putExtra("result", 2);
+                                startActivity(intent);
+                                killCallingActivity();
+                            }
+                        }, SCORE_DELAY);
                     } else {
-                        gameOver = true;
-                        intent.putExtra("result", 3);
-                        startActivity(intent);
-                        killCallingActivity();
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                gameOver = true;
+                                intent.putExtra("result", 3);
+                                startActivity(intent);
+                                killCallingActivity();
+                            }
+                        }, SCORE_DELAY);
                     }
                 }
             }
