@@ -27,7 +27,7 @@ public class TieFragment extends Fragment {
         newGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), BoardActivity.class));
+                startActivity(new Intent(getActivity(), BoardActivityComp.class));
                 getActivity().finish();
             }
         });
@@ -35,6 +35,7 @@ public class TieFragment extends Fragment {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(getActivity(), MenuActivity.class));
                 getActivity().finish();
             }
         });

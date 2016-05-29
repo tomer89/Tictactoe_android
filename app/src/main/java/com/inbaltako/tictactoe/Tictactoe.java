@@ -3,7 +3,7 @@ package com.inbaltako.tictactoe;
 import java.util.Random;
 
 public class Tictactoe {
-    private char board[];
+    public char board[];
     private final static int BOARD_SIZE = 9;
     private Random random;
 

@@ -2,60 +2,88 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\pre-dexed\release\com.android.support-design-23.3.0_dad76abafa1507ff8bb965630dd81911b238c935.jar" />
-    </item>
-    <item
-        jar="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-23.3.0_25e46b3326dcaebcc7dec8d6dd8129f70b6ccf9c.jar" />
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_28bf8d8d6f447d3e33d4081a938774accbb517f3\classes.dex" />
     </item>
     <item
-        jar="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-23.3.0_63384beb784db2d04228111e238ea88d6d2ffc2f.jar" />
-    </item>
-    <item
-        jar="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.3.0_7f7f435609a80759fe796626d7da6a3eb0005b66.jar" />
-    </item>
-    <item
-        jar="C:\Users\inbaltako\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
-        jumboMode="false"
+        jar="C:\Users\user\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\pre-dexed\release\support-annotations-23.3.0_52594575d35909b521dcfb91c9c2a366a7665b67.jar" />
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_c5dc4031e053122213b93fc8333e2d21b2a5f205\classes.dex" />
     </item>
     <item
-        jar="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\pre-dexed\release\internal_impl-23.3.0_ee2c3078db2942941a23584de0257dc784165565.jar" />
-    </item>
-    <item
-        jar="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.3.0_8caa1559a4b357cdac6f60e665bdd343b0e20c17.jar" />
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_dc2fa6cfe20dab5577ed707cc9aefea0795c6971\classes.dex" />
     </item>
     <item
-        jar="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_bd715f516b132db3fbe5ef51e61cea6fd236d1d4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1657613536be51685136bbef8ebd5940c0adca3a">
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_47d165b1795ab064ad03750b6f28e4950510be7c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-8.4.0_9ab081d0814a767f0551219c837f7d72c358ceca\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_a0442f85e971ad7dae1ad282818bc3dd265ec3b0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_1044b2224d3a1d59facdee8bcbe7f11ba07b2118\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="C:\Users\inbaltako\Documents\GitHub\TicAnd\app\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-23.3.0_302ed19cbf2965f7c970090afc63c402236c49d0.jar" />
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_ee620637247d2bca2639721274c28d7c245683e4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_87c13edbec28d34b0a3f7d1d27890ad01872ddab\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_d7467f7ef7fc0092377c25e5e95cb37710ca2f2b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4acf5e234ee4ff2d4c420dbeaa69e775508ebdb9">
+        <dex dex="C:\Users\user\Desktop\Tomer\two_player\Tictactoe_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d719be379b2e0ede169fe7d277f30014d01bb3e5\classes.dex" />
     </item>
 
 </items>

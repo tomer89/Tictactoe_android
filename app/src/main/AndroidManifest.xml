@@ -21,8 +21,9 @@
             android:name=".MenuActivity"
             android:label="MenuActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".BoardActivity"></activity>
-        <activity android:name=".ScoreActivity"></activity>
+        <activity android:name=".BoardActivityComp" />
+        <activity android:name=".ScoreActivity" />
+        <activity android:name=".BoardActivityPlayer"></activity>
     </application>
 
 </manifest>

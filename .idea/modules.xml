@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TicAnd.iml" filepath="$PROJECT_DIR$/TicAnd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tictactoe_android.iml" filepath="$PROJECT_DIR$/Tictactoe_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

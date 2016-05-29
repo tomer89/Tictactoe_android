@@ -11,6 +11,8 @@
     <string name="move">move</string>
     <string name="end_game">Ending Game</string>
     <string name="opponent">Opponent\'s</string>
+    <string name="player_one">Player one</string>
+    <string name="player_two">Player two</string>
     <string name="you">you</string>
     <string name="it_s_a">it\'s a</string>
     <string name="tie">tie!</string>
@@ -18,4 +20,10 @@
     <string name="lost">lost!</string>
     <string name="your">Your</string>
     <string name="moves">moves</string>
+    <string name="double_click_banner">ca-app-pub-1826176491547625/5571366795</string>
+    <string name="comp_board_double_click_banner">ca-app-pub-1826176491547625/5571366795</string>
+    <string name="two_player_board_double_click_banner">ca-app-pub-1826176491547625/5571366795</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

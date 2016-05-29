@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context="com.inbaltako.tictactoe.TieFragmentTwoPlayers">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/newGameTieTwoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:src="@drawable/new_game_btn"
+        android:layout_below="@+id/topLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <ImageButton
+        android:id="@+id/exitTieTwoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:src="@drawable/exit_btn"
+        android:layout_below="@+id/newGameTieTwoPlayer"
+        android:layout_alignStart="@+id/newGameTieTwoPlayer" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/topLayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="75dp"
+            android:paddingRight="20dp"
+            android:text="@string/it_s_a"
+            android:textColor="@color/white"
+            android:textSize="65sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/tie"
+            android:textColor="@color/colorAccent"
+            android:textSize="65sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
